@@ -1,0 +1,20 @@
+To do:
+
+1.  Set up authentication for users
+1A.  Also set up a cookie type idea to stay logged on.
+
+2.  Require unique (not used) username
+
+3.  Set up the "Forgot Password" function
+
+4.  Double check all queries are parameterized
+
+5.  Make entries highlighted as you tab to them for easy erasing
+
+6.  The cursor closes after each use of the app.  I think moving the conn and db variables outside of global would fix
+    that.  Maybe just set them to a variable like "params" and call that variable with each query to fix it.
+
+7.  Check for close  spellings if not correct and make sure extra spaces, tabs, etc after the word are not a problem
+
+6.  Generally add more design and color to make it a better looking app to the front end user
+
