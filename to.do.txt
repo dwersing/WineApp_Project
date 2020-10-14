@@ -1,4 +1,4 @@
-To do:
+To do on current code:
 
 1.  Set up authentication for users
 1A.  Also set up a cookie type idea to stay logged on.
@@ -16,5 +16,16 @@ To do:
 
 7.  Check for close  spellings if not correct and make sure extra spaces, tabs, etc after the word are not a problem
 
-6.  Generally add more design and color to make it a better looking app to the front end user
+8.  Generally add more design and color to make it a better looking app to the front end user
 
+
+
+To do to expand project:
+
+1.  Be able to read others' reviews.
+
+2.  Add the ability to track wines (aging time) you are currently storing
+
+3.  Check reviews of wines the user did not specifically save (a more general database)
+
+4.  Make a list of wines the user intends to taste.

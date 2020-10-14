@@ -1,10 +1,8 @@
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
-import json
-from datetime import datetime, timedelta
+
 import psycopg2
-import os
 
 
 Builder.load_file('front_end.kv')
@@ -20,47 +18,6 @@ tblMyWines = "CREATE TABLE IF NOT EXISTS my_wines(id SERIAL PRIMARY KEY, year IN
              " review TEXT NOT NULL);"
 db.execute(tblMyWines)
 
-
-# class Authentication:
-#
-#     def __init__(self, username, password):
-#         self.username = username
-#         self.password = password
-#
-#     @staticmethod
-#     def est_user_file(username, password):
-#         with open('user_auth.json') as auth_file:
-#             current_user = json.load(auth_file)
-#         start_time = datetime.now()
-#         current_user[username] = {'username': username, 'password': password, 'created': start_time.strftime('%H:%M:%S')}
-#         print('loaded')
-#         with open('user_auth.json', 'w') as auth_file:
-#             json.dump(current_user, auth_file, default=str)
-#
-#         print('logged in')
-#
-#     def get_current_user(self):
-#         # if os.path.exists('user_auth.json'):
-#         with open('user_auth.json') as auth_file:
-#             current_user = json.load(auth_file)
-#             print(timedelta(datetime.now() - current_user.created))
-#             date_time = datetime.now()
-#             hour = timedelta(seconds=3600)
-#             delta = date_time - hour
-#             print(delta)
-#             while delta >
-#         # else:
-#         #     return None
-#
-#     # @staticmethod
-#     # def delete_user_auth():
-#     #     with open('user_auth.json') as auth_file:
-#     #         lines = auth_file.readlines()
-#     #
-#     #     with open('user_auth.json', 'w') as auth_file:
-#     #         for line in lines:
-#     #             if line.strip('\n') !=
-#
 
 class LoginScreen(Screen):
 
